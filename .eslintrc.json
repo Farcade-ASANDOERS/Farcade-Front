@@ -52,7 +52,7 @@
         "bracketSpacing": true,
         "bracketSameLine": false,
         "arrowParens": "always",
-        "endOfLine": "crlf",
+        "endOfLine": "lf",
         "proseWrap": "always",
         "htmlWhitespaceSensitivity": "strict",
         "plugins": []
