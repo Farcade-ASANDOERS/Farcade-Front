@@ -1,8 +1,10 @@
 {
   "editor.formatOnSave": true, // 저장할 때마다 자동으로 포맷팅
+  "prettier.singleQuote": true, // Prettier가 작은따옴표를 사용하도록 설정
   "editor.defaultFormatter": "esbenp.prettier-vscode", // Prettier를 기본 포맷터로 사용
   "eslint.format.enable": true, // ESLint가 포맷팅을 수행하도록 설정
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
+    // "source.fixAll.eslint": "explicit" //ctrl+s만 허용
+    "source.fixAll.eslint": "always"
   }
 }
