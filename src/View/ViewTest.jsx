@@ -1,20 +1,22 @@
 import logo from '../Assets/image/Type-B.svg';
 import {
-  AppLogoSpin,
+  TestContents,
   AppContainer,
   AppLogo,
   AppHeader,
   AboutSection,
-} from '../App.styled';
+} from '../Test.styled';
 
 const ViewTest = () => {
   return (
-    <AppContainer>
-      <AppHeader>
-        <AppLogo src={logo} alt='logo' />
-        <AboutSection>Hello! I am Farcade!!</AboutSection>
-      </AppHeader>
-    </AppContainer>
+    <TestContents>
+      <AppContainer>
+        <AppHeader>
+          <AppLogo src={logo} alt='logo' />
+          <AboutSection>Hello! I am Farcade!!</AboutSection>
+        </AppHeader>
+      </AppContainer>
+    </TestContents>
   );
 };
 

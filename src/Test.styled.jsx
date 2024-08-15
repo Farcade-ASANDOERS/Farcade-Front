@@ -31,11 +31,16 @@ export const AppLogoSpin = keyframes`
     transform: rotate(360deg);
   }
 `;
-
+export const TestContents = styled.div`
+  display: flex;
+  justify-content: center;
+  animation: ${colorTransition} 10s infinite alternate;
+`;
 // App container
 export const AppContainer = styled.div`
+  /* background-color: green; */
+  width: var(--inner-contents-width);
   text-align: center;
-  animation: ${colorTransition} 10s infinite alternate;
 `;
 
 // App logo
@@ -55,11 +60,15 @@ export const AppHeader = styled.header`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* font-size: calc(10px + 2vmin); */
   color: white;
 `;
 
 // About section
 export const AboutSection = styled.div`
   margin-top: 30px;
+  /* background-color: green; */
+  font-size: var(--font-title-lg);
+  line-height: var(--font-title-LH-lg);
+  font-weight: var(--font-weight-semi-bold);
 `;
