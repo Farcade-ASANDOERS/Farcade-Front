@@ -7,15 +7,15 @@ import {
   AboutSection,
 } from '../App.styled';
 
-const App = () => {
+const ViewTest = () => {
   return (
     <AppContainer>
       <AppHeader>
-        <AppLogo src={logo} alt="logo" />
+        <AppLogo src={logo} alt='logo' />
         <AboutSection>Hello! I am Farcade!!</AboutSection>
       </AppHeader>
     </AppContainer>
   );
 };
 
-export default App;
+export default ViewTest;
