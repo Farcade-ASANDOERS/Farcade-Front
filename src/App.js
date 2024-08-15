@@ -1,4 +1,4 @@
-import logo from './Assets/image/Fracade.svg';
+import logo from './Assets/image/Type-B.svg';
 import {
   AppLogoSpin,
   AppContainer,
@@ -7,15 +7,15 @@ import {
   AboutSection,
 } from './App.styled';
 
-function App() {
+const App = () => {
   return (
     <AppContainer>
       <AppHeader>
         <AppLogo src={logo} alt='logo' />
-        <AboutSection>Hello!, I am Farcade!!</AboutSection>
+        <AboutSection>Hello! I am Farcade!!</AboutSection>
       </AppHeader>
     </AppContainer>
   );
-}
+};
 
 export default App;
