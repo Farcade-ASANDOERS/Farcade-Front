@@ -1,5 +1,4 @@
 import styled, { keyframes } from 'styled-components';
-
 const colorTransition = keyframes`
   0% {
     background-color: var(--primary-color-200);
