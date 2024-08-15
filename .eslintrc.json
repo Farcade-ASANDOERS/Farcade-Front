@@ -61,7 +61,8 @@
 
     "react/react-in-jsx-scope": "off",
     "arrow-body-style": "off",
-    "prefer-arrow-callback": "off",
+    "prefer-arrow-callback": "error",
+    "func-style": ["error", "expression"],
     "react/jsx-no-target-blank": "off",
     "react-refresh/only-export-components": [
       "warn",
