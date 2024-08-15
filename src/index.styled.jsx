@@ -66,7 +66,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: var(--primary-color-300);
+    background-color: var(--primary-color-200);
     font-family: 'Pretendard Variable';
     color: var(--white-color);
     margin: 0;
