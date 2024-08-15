@@ -1,46 +1,11 @@
 import { createGlobalStyle } from 'styled-components';
-
+//@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css');
 const GlobalStyle = createGlobalStyle`
-  @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css');
-
   :root {
-    --main-color-navy-01: #010026;
-    --main-color-navy-02: #020039;
-    --main-color-navy-03: #1a1a3c;
-
-    --main-color-blue-01: #0038ff;
-    --main-color-blue-02: #2f5cfb;
-    --main-color-blue-03: #bbc6ee;
-    --main-color-blue-04: #4285f4;
-
-    --sub-color-yellow-01: #ffed1d;
-    --sub-color-yellow-02: #d6df22;
-    --sub-color-yellow-03: #615b14;
-
-    --grey-color-grey-01: #252525;
-    --grey-color-grey-02: #656565;
-    --grey-color-grey-03: #d9d9d9;
-
-    --white-color: #ffffff;
-    --black-color: #000000;
-    --grey-color: #5e5e5e;
-
-    --gradient-color-blue-01: #0057ff;
-    --gradient-color-blue-02: #2f5cfb;
-    --gradient-color-blue-03: #bbc6ee;
-    --gradient-color-navy-03: #1a1a3c;
-
-    --guide-line-color: #44695d;
-
-    --font-size-xxl: 28px;
-    --font-size-xl: 24px;
-    --font-size-l: 20px;
-    --font-size-xm: 16px;
-    --font-size-m: 14px;
-    --font-size-s: 12px;
-    --font-size-xs: 11px;
-
-    --font-family-Regular: 'Pretendard Variable';
+    --primary-color-200 : #FBBFB7;
+    --primary-color-300 : #F89F92;
+    --primary-color-400 : #F67F6E;
+    --primary-color-500 : #F45F4A;
   }
 
   *,
@@ -101,7 +66,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: var(--main-color-navy-01);
+    background-color: var(--primary-color-300);
     font-family: 'Pretendard Variable';
     color: var(--white-color);
     margin: 0;
@@ -109,8 +74,13 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
     height: 100vh;
     min-height: auto;
-    max-width: 450px;
+    max-width: 100%;
     margin: 0 auto;
+
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 `;
 
