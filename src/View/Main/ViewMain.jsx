@@ -1,22 +1,18 @@
-import {
-  ServiceContainer,
-  StyledContainer,
-  ViewMainStyled,
-  Contents,
-} from './styled/ViewMain.styled';
-
+import { ServiceContainer, Contents } from '../styled/ViewMain.styled';
+import { CommonStyled, GuideLineStyled } from '../styled/common/Common.styled';
+import { ViewHeader } from '../Header/ViewHeader';
 const ViewMain = () => {
   return (
-    <ViewMainStyled>
-      <div style={{ border: '1px solid black' }}>header</div>
+    <CommonStyled>
+      <ViewHeader />
       Main 입니다.
-      <StyledContainer>
-        <Contents>banner</Contents>
-        <ServiceContainer>
-          <Contents>사용방법</Contents>
-        </ServiceContainer>
-        <Contents>인물 사진</Contents>
-      </StyledContainer>
+      {/* <StyledContainer> */}
+      <GuideLineStyled>banner</GuideLineStyled>
+      <ServiceContainer>
+        <GuideLineStyled>사용방법</GuideLineStyled>
+      </ServiceContainer>
+      <GuideLineStyled>인물 사진</GuideLineStyled>
+      {/* </StyledContainer> */}
       <div
         style={{
           backgroundColor: 'var(--primary-color-500)',
@@ -37,7 +33,7 @@ const ViewMain = () => {
         </button>
       </div>
       <div style={{ backgroundColor: 'var(--gray-color-10)' }}>footer</div>
-    </ViewMainStyled>
+    </CommonStyled>
   );
 };
 

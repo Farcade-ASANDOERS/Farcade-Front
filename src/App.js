@@ -1,11 +1,11 @@
 import ViewTest from './View/Test/ViewTest';
-import ViewMain from './View/ViewMain';
+import ViewMain from './View/Main/ViewMain';
 import { Route, Routes } from 'react-router-dom';
 const App = () => {
   return (
     <Routes>
       <Route path='/' element={<ViewMain />} />
-      <Route path='/dev-test' element={<ViewTest />} />
+      <Route path='/dev/test' element={<ViewTest />} />
     </Routes>
   );
 };
