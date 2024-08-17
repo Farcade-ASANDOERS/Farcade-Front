@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import logo from '../Assets/image/Type-B.svg';
 import {
   TestContents,
@@ -13,7 +14,9 @@ const ViewTest = () => {
       <AppContainer>
         <AppHeader>
           <AppLogo src={logo} alt='logo' />
-          <AboutSection>Hello! I am Farcade!!</AboutSection>
+          <AboutSection>
+            Hello! I am <Link to={'/'}>Farcade</Link>!!
+          </AboutSection>
         </AppHeader>
       </AppContainer>
     </TestContents>
