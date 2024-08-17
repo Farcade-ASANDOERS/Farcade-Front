@@ -135,13 +135,13 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: var(--primary-color-200);
+    background-color: var(--white-color);
     font-family: var(--font-family);
     font-size: var(--font-button-sm);
     line-height: var(--font-button-LH-sm);
     letter-spacing: var(--font-letter-spacing);
     font-weight: var(--font-weight-regular);
-    color: var(--white-color);
+    color: var(--gray-color-100);
     margin: 0;
     padding: 0;
     width: 100%;

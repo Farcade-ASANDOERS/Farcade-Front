@@ -1,4 +1,4 @@
-import ViewTest from './View/ViewTest';
+import ViewTest from './View/Test/ViewTest';
 import ViewMain from './View/ViewMain';
 import { Route, Routes } from 'react-router-dom';
 const App = () => {

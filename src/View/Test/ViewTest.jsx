@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
-import logo from '../Assets/image/Type-B.svg';
+import logo from '../../Assets/image/Type-B.svg';
 import {
   TestContents,
   AppContainer,
   AppLogo,
   AppHeader,
   AboutSection,
-} from '../Test.styled';
+} from '../../Test.styled';
 
 const ViewTest = () => {
   return (
