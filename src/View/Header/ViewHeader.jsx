@@ -3,6 +3,7 @@ import {
   ImageStyled,
   ButtonStyled,
   ContainerStyled,
+  FontStyled,
 } from '../styled/common/Common.styled';
 import { BoxStyled } from '../styled/ViewHeader.styled';
 import logoA from '../../Assets/image/main/logo-A.svg';
@@ -27,7 +28,7 @@ export const ViewHeader = () => {
           <ButtonStyled
             bgColorProps='var(--primary-color-500)'
             colorProps='var(--white-color)'
-            widthProps='165px'
+            widthProps='197px'
             radiusProps='12px'
             onClick={() => {
               alert('test');
@@ -40,3 +41,5 @@ export const ViewHeader = () => {
     </ContainerStyled>
   );
 };
+
+export default ViewHeader;
