@@ -19,7 +19,7 @@ export const Contact = styled.div`
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  margin-right: 0.89%;
+  margin-right: 8px;
   /* background-color: aqua; */
   width: 68px;
 `;

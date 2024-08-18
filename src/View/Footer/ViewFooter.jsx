@@ -8,6 +8,8 @@ import { Intro, Contact, CopyRight } from '../styled/ViewFooter.styled';
 import logoB from '../../Assets/image/main/logo-B.svg';
 import email from '../../Assets/image/main/e-mail-logo.svg';
 import insta from '../../Assets/image/main/insta-logo.svg';
+import { handleMoveToURL } from '../../Controller/main.control';
+import { URL } from '../../Model/url.data';
 
 export const ViewFooter = () => {
   return (
@@ -23,7 +25,17 @@ export const ViewFooter = () => {
         justifyProps='space-between'
         widthProps='var(--inner-contents-width)'
       >
-        <ImageStyled src={logoB} widthProps='160px' heightProps='37px' />
+        <div>
+          <ImageStyled
+            src={logoB}
+            widthProps='160px'
+            heightProps='37px'
+            cursorProps='pointer'
+            onClick={() => {
+              handleMoveToURL(URL.home);
+            }}
+          />
+        </div>
         <GroupStyled
           displayProps='flex'
           justifyProps='space-between'
@@ -42,13 +54,26 @@ export const ViewFooter = () => {
             widthProps='192px'
           >
             <Contact>Contact :</Contact>
-            <ImageStyled
-              src={email}
-              widthProps='auto'
-              heightProps='auto'
-              marginProps='0 1.79% 0 0'
-            />
-            <ImageStyled src={insta} widthProps='auto' heightProps='auto' />
+            <div>
+              <ImageStyled
+                src={email}
+                marginProps='0 16px 0 0'
+                //1.79%
+                cursorProps='pointer'
+                onClick={() => {
+                  handleMoveToURL(URL.contact);
+                }}
+              />
+            </div>
+            <div>
+              <ImageStyled
+                src={insta}
+                cursorProps='pointer'
+                onClick={() => {
+                  handleMoveToURL(URL.insta);
+                }}
+              />
+            </div>
           </GroupStyled>
         </GroupStyled>
       </GuideLineStyled>
