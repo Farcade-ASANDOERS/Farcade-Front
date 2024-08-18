@@ -9,6 +9,7 @@ import logoA from '../../Assets/image/main/logo-A.svg';
 import { HashLink } from 'react-router-hash-link';
 import { URL } from '../../Model/url.data';
 import { handleMoveToURL } from '../../Controller/main.control';
+import { scrollSet } from '../../Controller/hashLink.contral';
 
 export const ViewHeader = () => {
   return (
@@ -23,26 +24,28 @@ export const ViewHeader = () => {
         widthProps='var(--inner-contents-width)'
         // bgColorProps='#597659'
       >
-        <ImageStyled
-          src={logoA}
-          cursorProps='pointer'
-          onClick={() => {
-            window.scrollTo(0, 0);
-          }}
-        />
+        <div>
+          <ImageStyled
+            src={logoA}
+            cursorProps='pointer'
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+          />
+        </div>
         <BoxStyled>
           <ContentStyled>
-            <HashLink smooth to='#ourService'>
+            <HashLink smooth to='#ourService' scroll={scrollSet}>
               Our Service
             </HashLink>
           </ContentStyled>
           <ContentStyled onClick={() => {}}>
-            <HashLink smooth to='#team'>
+            <HashLink smooth to='#team' scroll={scrollSet}>
               Team
             </HashLink>
           </ContentStyled>
           <ContentStyled onClick={() => {}}>
-            <HashLink smooth to='#contact'>
+            <HashLink smooth to='#contact' scroll={scrollSet}>
               Contact
             </HashLink>
           </ContentStyled>
