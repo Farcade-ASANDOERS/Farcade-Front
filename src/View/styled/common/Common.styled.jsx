@@ -9,6 +9,7 @@ export const CommonStyled = styled.div`
   text-align: center;
   width: 100%;
   /* align-items: center; */
+  padding-top: ${(props) => props.paddingTopProps};
 `;
 
 export const ContainerStyled = styled.div`
@@ -62,6 +63,7 @@ export const ImageStyled = styled.img`
   width: ${(props) => props.widthProps};
   height: ${(props) => props.heightProps};
   margin: ${(props) => props.marginProps};
+  cursor: ${(props) => props.cursorProps};
 `;
 
 export const ButtonStyled = styled.button`
