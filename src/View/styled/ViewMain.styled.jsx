@@ -14,6 +14,14 @@ export const Contents = styled.div`
   margin: 0 auto;
 `;
 
+export const HeaderFixedStyled = styled.div`
+  position: fixed; /* 헤더를 상단에 고정 */
+  top: 0;
+  width: 100%; /* 화면 전체 너비 */
+  z-index: 1000; /* 다른 요소보다 위에 위치 */
+  background-color: white; /* 배경색을 추가해서 가독성 확보 */
+`;
+
 export const CustomFontStyled = styled(FontStyled)`
   color: ${(props) => props.colorProps};
 `;

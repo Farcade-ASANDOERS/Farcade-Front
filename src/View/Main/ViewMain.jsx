@@ -2,6 +2,7 @@ import {
   ServiceContainer,
   CustomFontStyled as SpanStyled,
   CustomFontStyled,
+  HeaderFixedStyled,
 } from '../styled/ViewMain.styled';
 import {
   CommonStyled,
@@ -23,6 +24,8 @@ import arrowDown from '../../Assets/image/main/arrow-down.svg';
 import ViewHeader from '../Header/ViewHeader';
 import ViewFooter from '../Footer/ViewFooter';
 import Contents from './components/Contents';
+import { URL } from '../../Model/url.data';
+import { handleMoveToURL } from '../../Controller/main.control';
 
 const profilesArr = [
   {
@@ -65,8 +68,10 @@ const dataArr = [
 
 const ViewMain = () => {
   return (
-    <CommonStyled>
-      <ViewHeader />
+    <CommonStyled paddingTopProps='77px'>
+      <HeaderFixedStyled>
+        <ViewHeader />
+      </HeaderFixedStyled>
       <GuideLineStyled>
         <GroupStyled
           displayProps='flex'
@@ -113,7 +118,7 @@ const ViewMain = () => {
             radiusProps='100px'
             marginProps=' 0 auto 140px auto'
             onClick={() => {
-              alert('test');
+              handleMoveToURL(URL.launchAlerts);
             }}
           >
             GET LAUNCH ALERTS
@@ -124,7 +129,11 @@ const ViewMain = () => {
         bgColorProps='var(--gray-color-90)'
         colorProps='var(--white-color)'
       >
-        <GuideLineStyled dirProps='column' marginProps='120px auto 120px auto'>
+        <GuideLineStyled
+          id='ourService'
+          dirProps='column'
+          marginProps='120px auto 120px auto'
+        >
           <CustomFontStyled
             fontSizeProps='var(--font-title-sx)'
             LHProps='var(--font-title-LH-sx)'
@@ -248,7 +257,7 @@ const ViewMain = () => {
           </GuideLineStyled>
         </GuideLineStyled>
       </ServiceContainer>
-      <GuideLineStyled dirProps='column' marginProps='120px auto'>
+      <GuideLineStyled id='team' dirProps='column' marginProps='120px auto'>
         <CustomFontStyled
           fontSizeProps='var(--font-title-sx)'
           LHProps='var(--font-title-LH-sx)'
@@ -314,6 +323,7 @@ const ViewMain = () => {
         colorProps='var(--white-color)'
       >
         <GuideLineStyled
+          id='contact'
           displayProps='flex'
           dirProps='column'
           justifyProps='center'
@@ -339,15 +349,15 @@ const ViewMain = () => {
             fontSizeProps='var(--font-button-lg)'
             LHProps='var(--font-button-LH-lg)'
             fontWeightProps='var(--font-weight-bold)'
-            widthProps='332px'
+            widthProps='363px'
             heightProps='68px'
             radiusProps='16px'
             marginProps='64px auto 120px auto'
             onClick={() => {
-              alert('sketch입니다.');
+              handleMoveToURL(URL.contact);
             }}
           >
-            farcade@gmail.com
+            farcade.us@gmail.com
           </ButtonStyled>
         </GuideLineStyled>
       </ServiceContainer>

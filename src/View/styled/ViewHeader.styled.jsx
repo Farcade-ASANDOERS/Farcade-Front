@@ -10,6 +10,11 @@ export const ContainerStyled = styled.div`
   display: flex;
   align-items: center;
   height: ${(props) => props.heightProps};
+
+  /* position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; */
 `;
 
 export const BoxStyled = styled.div`
@@ -21,4 +26,8 @@ export const BoxStyled = styled.div`
     margin-right: 28px;
     align-items: center;
   }
+`;
+
+export const ContentStyled = styled.div`
+  cursor: pointer;
 `;

@@ -3,10 +3,13 @@ import {
   ImageStyled,
   ButtonStyled,
   ContainerStyled,
-  FontStyled,
 } from '../styled/common/Common.styled';
-import { BoxStyled } from '../styled/ViewHeader.styled';
+import { BoxStyled, ContentStyled } from '../styled/ViewHeader.styled';
 import logoA from '../../Assets/image/main/logo-A.svg';
+import { HashLink } from 'react-router-hash-link';
+import { URL } from '../../Model/url.data';
+import { handleMoveToURL } from '../../Controller/main.control';
+
 export const ViewHeader = () => {
   return (
     <ContainerStyled
@@ -20,18 +23,36 @@ export const ViewHeader = () => {
         widthProps='var(--inner-contents-width)'
         // bgColorProps='#597659'
       >
-        <ImageStyled src={logoA} />
+        <ImageStyled
+          src={logoA}
+          cursorProps='pointer'
+          onClick={() => {
+            window.scrollTo(0, 0);
+          }}
+        />
         <BoxStyled>
-          <div>Our Service</div>
-          <div>Team</div>
-          <div>Contact</div>
+          <ContentStyled>
+            <HashLink smooth to='#ourService'>
+              Our Service
+            </HashLink>
+          </ContentStyled>
+          <ContentStyled onClick={() => {}}>
+            <HashLink smooth to='#team'>
+              Team
+            </HashLink>
+          </ContentStyled>
+          <ContentStyled onClick={() => {}}>
+            <HashLink smooth to='#contact'>
+              Contact
+            </HashLink>
+          </ContentStyled>
           <ButtonStyled
             bgColorProps='var(--primary-color-500)'
             colorProps='var(--white-color)'
             widthProps='197px'
             radiusProps='12px'
             onClick={() => {
-              alert('test');
+              handleMoveToURL(URL.launchAlerts);
             }}
           >
             GET LAUNCH ALERTS
