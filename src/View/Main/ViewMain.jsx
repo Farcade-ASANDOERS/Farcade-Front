@@ -1,6 +1,7 @@
-import { ServiceContainer, Contents } from '../styled/ViewMain.styled';
+import { ServiceContainer } from '../styled/ViewMain.styled';
 import { CommonStyled, GuideLineStyled } from '../styled/common/Common.styled';
 import { ViewHeader } from '../Header/ViewHeader';
+import ViewFooter from '../Footer/ViewFooter';
 const ViewMain = () => {
   return (
     <CommonStyled>
@@ -32,7 +33,7 @@ const ViewMain = () => {
           click
         </button>
       </div>
-      <div style={{ backgroundColor: 'var(--gray-color-10)' }}>footer</div>
+      <ViewFooter />
     </CommonStyled>
   );
 };

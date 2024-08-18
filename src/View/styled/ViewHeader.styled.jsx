@@ -1,15 +1,16 @@
 import styled from 'styled-components';
 
 export const ContainerStyled = styled.div`
+  background-color: ${(props) => props.bgColorProps};
   color: var(--gray-color-60);
-  display: flex;
-  border-bottom: 1px solid var(--gray-color-60);
-  font-weight: var(--font-weight-md);
-  height: 77px;
-  align-items: center;
-`;
+  border-bottom: ${(props) => props.borderBottomProps};
 
-export const ImageStyled = styled.img``;
+  font-weight: var(--font-weight-md);
+
+  display: flex;
+  align-items: center;
+  height: ${(props) => props.heightProps};
+`;
 
 export const BoxStyled = styled.div`
   display: flex;
@@ -19,11 +20,5 @@ export const BoxStyled = styled.div`
     display: flex;
     margin-right: 28px;
     align-items: center;
-  }
-  button {
-    background-color: var(--primary-color-500);
-    color: var(--white-color);
-    width: 165px;
-    border-radius: 12px;
   }
 `;

@@ -1,16 +1,22 @@
-import { GuideLineStyled } from '../styled/common/Common.styled';
 import {
-  ContainerStyled,
-  BoxStyled,
+  GuideLineStyled,
   ImageStyled,
-} from '../styled/ViewHeader.styled';
+  ButtonStyled,
+  ContainerStyled,
+} from '../styled/common/Common.styled';
+import { BoxStyled } from '../styled/ViewHeader.styled';
 import logoA from '../../Assets/image/main/logo-A.svg';
 export const ViewHeader = () => {
   return (
-    <ContainerStyled>
+    <ContainerStyled
+      heightProps='77px'
+      colorProps='var(--gray-color-60)'
+      borderBottomProps='1px solid var(--primary-color-200)'
+    >
       <GuideLineStyled
         displayProps='flex'
         justifyProps='space-between'
+        widthProps='var(--inner-contents-width)'
         // bgColorProps='#597659'
       >
         <ImageStyled src={logoA} />
@@ -18,7 +24,17 @@ export const ViewHeader = () => {
           <div>Our Service</div>
           <div>Team</div>
           <div>Contact</div>
-          <button>GET LAUNCH ALERTS</button>
+          <ButtonStyled
+            bgColorProps='var(--primary-color-500)'
+            colorProps='var(--white-color)'
+            widthProps='165px'
+            radiusProps='12px'
+            onClick={() => {
+              alert('test');
+            }}
+          >
+            GET LAUNCH ALERTS
+          </ButtonStyled>
         </BoxStyled>
       </GuideLineStyled>
     </ContainerStyled>
