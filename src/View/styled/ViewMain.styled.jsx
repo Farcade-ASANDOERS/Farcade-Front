@@ -2,10 +2,12 @@ import styled from 'styled-components';
 import { FontStyled } from './common/Common.styled';
 
 export const ServiceContainer = styled.div`
+  width: 100%;
   background-color: ${(props) => props.bgColorProps};
   color: ${(props) => props.colorProps};
   /* background-color: var(--gray-color-90);
   color: var(--white-color); */
+  margin: 0 auto;
 `;
 
 export const Contents = styled.div`
