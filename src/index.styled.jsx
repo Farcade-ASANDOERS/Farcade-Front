@@ -74,7 +74,8 @@ const GlobalStyle = createGlobalStyle`
     --font-letter-spacing: 1%;
 
     /* standard width */
-    --inner-contents-width: 67.71%;
+    //1300px / 67.71%
+    --inner-contents-width: 1300px;
   }
 
   *,
