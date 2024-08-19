@@ -33,7 +33,7 @@ export const GuideLineStyled = styled.div`
   background-color: ${(props) => props.bgColorProps}; //|| 'green'
   color: ${(props) => props.colorProps};
   width: ${(props) => props.widthProps || 'var(--inner-contents-width)'};
-
+  height: ${(props) => props.heightProps};
   max-width: 1300px;
   min-width: 925.09px;
   margin: ${(props) => props.marginProps || '0 auto'};

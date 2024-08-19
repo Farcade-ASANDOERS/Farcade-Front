@@ -30,4 +30,8 @@ export const BoxStyled = styled.div`
 
 export const ContentStyled = styled.div`
   cursor: pointer;
+
+  &:hover {
+    color: var(--gray-color-90);
+  }
 `;
