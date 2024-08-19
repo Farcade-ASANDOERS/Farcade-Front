@@ -11,7 +11,7 @@ import { URL } from '../../Model/url.data';
 import { handleMoveToURL } from '../../Controller/main.control';
 import { scrollSet } from '../../Controller/hashLink.contral';
 
-export const ViewHeader = () => {
+const ViewHeader = () => {
   return (
     <ContainerStyled
       heightProps='77px'

@@ -23,6 +23,7 @@ import arrowPolygon from '../../Assets/image/main/arrow-polygon-down.svg';
 import arrowDown from '../../Assets/image/main/arrow-down.svg';
 import ViewHeader from '../Header/ViewHeader';
 import ViewFooter from '../Footer/ViewFooter';
+import Test from '../Footer/ViewFooter.test';
 import Contents from './components/Contents';
 import { URL } from '../../Model/url.data';
 import { handleMoveToURL } from '../../Controller/main.control';
