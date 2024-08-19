@@ -12,7 +12,7 @@ import {
   ButtonStyled,
   FontStyled,
 } from '../styled/common/Common.styled';
-import Profile from './components/Profile';
+
 import bannerImage from '../../Assets/image/main/banner-plane.svg';
 import personA from '../../Assets/image/main/person-a.svg';
 import personB from '../../Assets/image/main/person-b.svg';
@@ -23,7 +23,8 @@ import arrowPolygon from '../../Assets/image/main/arrow-polygon-down.svg';
 import arrowDown from '../../Assets/image/main/arrow-down.svg';
 import ViewHeader from '../Header/ViewHeader';
 import ViewFooter from '../Footer/ViewFooter';
-import Test from '../Footer/ViewFooter.test';
+import Profile from './components/Profile';
+// import Test from '../Footer/ViewFooter.test';
 import Contents from './components/Contents';
 import { URL } from '../../Model/url.data';
 import { handleMoveToURL } from '../../Controller/main.control';

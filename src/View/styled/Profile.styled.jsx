@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { FontStyled } from '../styled/common/Common.styled';
+
 export const Container = styled.div`
   background-color: var(--gray-color-10);
   border-radius: 12px;
