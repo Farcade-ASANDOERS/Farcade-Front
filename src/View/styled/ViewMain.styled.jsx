@@ -2,6 +2,9 @@ import styled from 'styled-components';
 import { FontStyled } from './common/Common.styled';
 
 export const ServiceContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   background-color: ${(props) => props.bgColorProps};
   color: ${(props) => props.colorProps};
