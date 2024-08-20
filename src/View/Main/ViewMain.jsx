@@ -13,14 +13,6 @@ import {
   FontStyled,
 } from '../styled/common/Common.styled';
 
-import bannerImage from '../../Assets/image/main/banner-plane.svg';
-import personA from '../../Assets/image/main/person-a.svg';
-import personB from '../../Assets/image/main/person-b.svg';
-import personC from '../../Assets/image/main/person-c.svg';
-import mainMessage from '../../Assets/image/main/main-message.svg';
-import mainSet from '../../Assets/image/main/main-set.svg';
-import arrowPolygon from '../../Assets/image/main/arrow-polygon-down.svg';
-import arrowDown from '../../Assets/image/main/arrow-down.svg';
 import ViewHeader from '../Header/ViewHeader';
 import ViewFooter from '../Footer/ViewFooter';
 import Profile from './components/Profile';
@@ -28,45 +20,9 @@ import Profile from './components/Profile';
 import Contents from './components/Contents';
 import { URL } from '../../Model/url.data';
 import { handleMoveToURL } from '../../Controller/main.control';
-
-const profilesArr = [
-  {
-    imageProps: personA,
-    typeProps: 'Team Leader',
-    nameProps: 'Woo Ju Son',
-    emailProps: '99proj@gmail.com ',
-  },
-  {
-    imageProps: personB,
-    typeProps: 'DESIGNER',
-    nameProps: 'Ju Hee Hyung',
-    emailProps: 'gudwngml179@gmail.com',
-  },
-  {
-    imageProps: personC,
-    typeProps: 'MARKETER',
-    nameProps: 'Tumaris',
-    emailProps: 'ttumaris10@gmail.com',
-  },
-];
-
-const dataArr = [
-  {
-    title: 'Chat with Residents',
-    description:
-      'You can quickly gather neighborhood information by asking residents about the area through one-on-one chats.',
-  },
-  {
-    title: 'Neighborhood Safety Information',
-    description:
-      'You can quickly assess neighborhood safety through firsthand safety information shared by residents and the Fasade map.',
-  },
-  {
-    title: 'Neighborhood Community',
-    description:
-      'After moving, you can quickly get to know your neighborhood and connect with neighbors by utilizing the local community.',
-  },
-];
+import { contentsArr } from '../../Model/data/main/contents.data';
+import images from '../../Model/data/img/img.data';
+import { profilesArr } from '../../Model/data/main/profile.data';
 
 const ViewMain = () => {
   return (
@@ -103,7 +59,7 @@ const ViewMain = () => {
           </FontStyled>
           <div>
             <ImageStyled
-              src={bannerImage}
+              src={images.bannerImage}
               // widthProps='275px'
               // heightProps='149px'
               marginProps='68px auto'
@@ -180,10 +136,10 @@ const ViewMain = () => {
             when moving to the United States.
           </CustomFontStyled>
           <div>
-            <ImageStyled src={mainMessage} />
+            <ImageStyled src={images.mainMessage} />
           </div>
           <div>
-            <ImageStyled src={arrowDown} marginProps='120px 0' />
+            <ImageStyled src={images.arrowDown} marginProps='120px 0' />
           </div>
           <CustomFontStyled
             fontSizeProps='var(--font-title-sx)'
@@ -237,17 +193,17 @@ const ViewMain = () => {
             neighborhood.
           </CustomFontStyled>
           <div>
-            <ImageStyled src={mainSet} marginProps='64px 0' />
+            <ImageStyled src={images.mainSet} marginProps='64px 0' />
           </div>
           <div>
-            <ImageStyled src={arrowPolygon} marginProps='0 0 64px 0' />
+            <ImageStyled src={images.arrowPolygon} marginProps='0 0 64px 0' />
           </div>
           <GuideLineStyled
             widthProps='100%'
             marginProps='0'
             justifyProps='space-around'
           >
-            {dataArr.map((Element, index) => {
+            {contentsArr.map((Element, index) => {
               return (
                 <Contents
                   key={index}
